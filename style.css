@@ -15,26 +15,43 @@ body {
     margin: auto;
 }
 
+body >*{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 header {
     background-color: #e579e6;
     height: 100px;
-    margin: 10px 20px 20px;
+    margin: 20px auto;
 }
 
 main {
-    /* background-color: plum; */
-    height: 800px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
-.home {
+main >*{
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.jumbotron {
     background-color: #e1d67a;
-    margin: 20px auto;
+    margin-bottom: 20px;
     height: 300px;
 }
 
 .container {
     background-color: #0087ff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .container::after {
@@ -75,7 +92,5 @@ main {
 footer {
     background-color: #8801fe;
     height: 50px;
-    margin: 10px 20px 20px;
     display: block;
 }
-
