@@ -22,9 +22,32 @@ body >*{
 }
 
 header {
-    background-color: #e579e6;
     height: 100px;
     margin: 20px auto;
+}
+
+header img {
+    height: 50px;
+    padding-right: 10px;
+    border-right: 1px solid rgb(195, 195, 195);
+    margin-bottom: 20px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header ul li a {
+    color: rgb(195, 195, 195);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 0.8rem;
 }
 
 main {
