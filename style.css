@@ -8,7 +8,7 @@
     float: left;
 }
 
-/* Body */
+/* BODY */
 
 body {
     max-width: 90%;
@@ -66,9 +66,9 @@ main::after {
 }
 
 
-/* Columns */
+/* COLUMNS */
 
-.main-title-box {
+.main-top {
     height: 100px;
     float: left;
     width: 100%;
@@ -87,7 +87,7 @@ main::after {
     height: 400px;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
     background-color: #8801fe;
