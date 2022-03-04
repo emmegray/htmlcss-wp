@@ -43,10 +43,10 @@ header ul li {
 }
 
 header ul li a {
-    color: rgb(195, 195, 195);
+    color: rgb(109, 109, 109);
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 0.8rem;
 }
 
@@ -67,10 +67,34 @@ main::after {
 }
 
 .jumbotron {
-    background-color: #e1d67a;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
     margin-bottom: 20px;
-    height: 300px;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+.jumbotron .overlay {
+    background-color: rgba(29, 29, 29, 0.212);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 40px;
+}
+
+.jumbotron .overlay article {
+    position: absolute;
+    bottom: 60px;
+    max-width: 600px;
+}
+
+.jumbotron .overlay article h2,
+.jumbotron .overlay article p {
+    color: white;
+    font-weight: 300;
+} 
 
 .container {
     background-color: #0087ff;
