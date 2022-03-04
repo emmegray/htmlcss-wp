@@ -97,7 +97,6 @@ main::after {
 } 
 
 .container {
-    background-color: #0087ff;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
@@ -110,18 +109,67 @@ main::after {
 
 .container >div {
     float: left;
-    background-color: #abcfe7;
 }
 
+.container .col .banner {
+    height: 160px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container .col .banner::after {
+    background-color: rgba(29, 29, 29, 0.212);
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+}
+.container .col .banner.img1 {
+    background-image: url(img/img-1.jpg);
+}
+
+.container .col .banner.img2 {
+    background-image: url(img/banner-2.jpg);
+}
+
+.container .col .banner.img3 {
+    background-image: url(img/img-3.jpg);
+}
+
+.container .col h3,
+.container .col p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.container .col p {
+    color: rgb(109, 109, 109);
+    font-weight: 300;
+}
 
 /* COLUMNS */
 
 .main-top {
-    height: 100px;
+    padding: 20px 0;
     float: left;
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden;
+}
+
+.main-top h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-top p {
+    color: rgb(109, 109, 109);
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 .col.small {
@@ -138,7 +186,9 @@ main::after {
 /* FOOTER */
 
 footer {
-    background-color: #8801fe;
-    height: 50px;
     display: block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+
 }
